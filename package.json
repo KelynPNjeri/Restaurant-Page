@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Simple Restaurant Page",
+  // "main": "index.js",
+  "private": "false",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelynPNjeri/Restaurant-Page.git"
+  },
+  "keywords": [
+    "Restaurant-Page"
+  ],
+  "author": "Kelyn Paul Njeri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KelynPNjeri/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/KelynPNjeri/Restaurant-Page#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  }
+}
