@@ -2,10 +2,10 @@
   "name": "restaurant-page",
   "version": "1.0.0",
   "description": "Simple Restaurant Page",
-  // "main": "index.js",
-  "private": "false",
+  "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
     "file-loader": "^6.2.0",
     "webpack": "^5.12.3",
     "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
