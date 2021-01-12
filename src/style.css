@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300&family=Roboto+Condensed&display=swap');
 body {
-    background: url('./icon.png');
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.category-title {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    border-bottom: #000 dotted 1px;
+    text-align: center;
+}
+.menu-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Fraunces', serif;
 }
 
-.hello {
-    font-size: 32px;
+ul {
+    list-style-type: none;
     text-align: center;
-    text-decoration: underline;
+}
+li {
+    padding: 10px 15px;
+    font-size: 16px;
 }
