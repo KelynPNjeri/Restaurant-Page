@@ -1,8 +1,6 @@
-import _ from 'lodash';
 import './style.css';
-import { restaurantTitle, itemList } from './dom.js';
+import { restaurantTitle, itemList } from './dom';
 
- 
 const contentDiv = document.getElementById('content');
 
 contentDiv.appendChild(restaurantTitle());
