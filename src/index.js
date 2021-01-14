@@ -1,33 +1,34 @@
-import "./style.css";
-import { restaurantTitle } from "./dom";
-import { createMenuPage } from "./menu";
+import './style.css';
+import { restaurantTitle, createMenuTabs } from './dom';
+import { createMenuPage } from './menu';
+import { createContactPage } from './contact'
 
-const contentDiv = document.getElementById("content");
-
-const openMenu = (id) => {
-  switch (id) {
-    case "appetizer-tab":
-      alert("Hey there appetizers.");
-      break;
-
-    case "main-meal-tab":
-      alert("Hey there Main Meal.");
-      break;
-
-    default:
-      break;
-  }
-};
-
-const createMenuTabs = () => {
-  const tabMenu = document.createElement('div');
-  tabMenu.className = 'tab';
-  tabMenu.innerHTML = `
-    <button class="tablinks" id="appetizer-tab" onClick="openMenu(this.id)"">Main Menu</button>
-    <button class="tablinks" id="main-course-tab" onClick="openMenu(this.id);"">Contact Us</button>
-  `;
-  return tabMenu;
-};
-
+const contentDiv = document.getElementById('content');
 contentDiv.appendChild(restaurantTitle());
 contentDiv.appendChild(createMenuTabs());
+
+const openMenu = () => {
+  const tablinksArr = document.querySelectorAll('.tablinks');
+  for (let i = 0; i <= tablinksArr.length; i + 1) {
+
+    let tabID = tablinksArr[i].id;
+    switch (tabID) {
+      case 'menu':
+        alert('Menu Page.');
+        break;
+
+      case 'main-meal-tab':
+        alert('Contact Page.');
+        break;
+
+      default:
+        break;
+    }
+
+  }
+  
+};
+
+
+
+
