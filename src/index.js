@@ -8,7 +8,17 @@ contentDiv.appendChild(restaurantTitle());
 contentDiv.appendChild(createMenuTabs());
 
 const menuTab = document.getElementById('menu');
-menuTab.addEventListener('click', contentDiv.appendChild(createMenuPage()));
+menuTab.addEventListener('click', () => { 
+    alert("Menu");
+    document.getElementById('contact').style.display = "none";
+    // document.getElementById('restaurant-menu').style.display = "flex";
+    contentDiv.appendChild(createMenuPage());
+});
 
 const contactTab = document.getElementById('contact');
-contactTab.addEventListener('click', contentDiv.appendChild(createContactPage()));
+contactTab.addEventListener('click', () => {
+    alert("Contact");
+    document.getElementById('restaurant-menu').style.display = "none";
+    // document.getElementById('contact').style.display = "flex";
+    contentDiv.appendChild((createContactPage()));
+});
