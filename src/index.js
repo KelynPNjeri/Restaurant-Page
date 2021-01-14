@@ -9,3 +9,6 @@ contentDiv.appendChild(createMenuTabs());
 
 const menuTab = document.getElementById('menu');
 menuTab.addEventListener('click', contentDiv.appendChild(createMenuPage()));
+
+const contactTab = document.getElementById('contact');
+contactTab.addEventListener('click', contentDiv.appendChild(createContactPage()));
