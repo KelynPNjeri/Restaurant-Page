@@ -24,6 +24,7 @@ const createMenuTabs = () => {
   return tabMenu;
 };
 
+
 const itemList = (type) => {
   const itemDB = document.createElement('ul');
   const appetizeTitle = document.createElement('h3');
