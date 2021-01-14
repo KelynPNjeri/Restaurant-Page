@@ -1,10 +1,19 @@
+import Icon from "./icon.png";
+
 const restaurantTitle = () => {
-  const restaurantBrand = document.createElement('div');
-  restaurantBrand.id = 'branding';
-  
+  const restaurantBrand = document.createElement("div");
+  restaurantBrand.id = "branding";
+  const brandImage = new Image();
+  brandImage.id = 'restaurant-logo';
+  brandImage.src = Icon;
+  const menuTitle = document.createElement("h2");
+  menuTitle.innerText = 'Neopolis Restaurant';
+  menuTitle.className = 'menu-title';
+  restaurantBrand.appendChild(brandImage);
+  restaurantBrand.appendChild(menuTitle);
+  return restaurantBrand;
+
 };
-
-
 
 const itemList = (type) => {
   const itemDB = document.createElement("ul");
