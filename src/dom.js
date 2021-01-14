@@ -1,9 +1,10 @@
 const restaurantTitle = () => {
-  const title = document.createElement("h2");
-  title.className = "menu-title";
-  title.innerText = "Neopolis Menu";
-  return title;
+  const restaurantBrand = document.createElement('div');
+  restaurantBrand.id = 'branding';
+  
 };
+
+
 
 const itemList = (type) => {
   const itemDB = document.createElement("ul");
