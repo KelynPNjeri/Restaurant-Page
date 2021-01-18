@@ -1,6 +1,7 @@
+/* eslint-disable import/prefer-default-export */
 import { itemList } from './dom';
 
-const createMenuPage = () => {
+export const createMenuPage = () => {
   const menuDiv = document.createElement('div');
   menuDiv.id = 'restaurant-menu';
   menuDiv.appendChild(itemList('Appetizer'));
@@ -10,5 +11,3 @@ const createMenuPage = () => {
   menuDiv.appendChild(itemList('Drinks'));
   return menuDiv;
 };
-
-export { createMenuPage };

@@ -17,6 +17,10 @@ const openMenu = (id) => {
     case 'contact-tab':
       contentDiv.appendChild(createContactPage()).style.display = 'block';
       document.getElementById('restaurant-menu').style.display = 'none';
+      break;
+
+    default:
+      break;
   }
 };
 

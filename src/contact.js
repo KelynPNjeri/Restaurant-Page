@@ -1,4 +1,5 @@
-const createContactPage = () => {
+/* eslint-disable import/prefer-default-export */
+export const createContactPage = () => {
   const contactDiv = document.createElement('div');
   contactDiv.id = 'contact';
   contactDiv.innerHTML = `
@@ -8,5 +9,3 @@ const createContactPage = () => {
   `;
   return contactDiv;
 };
-
-export { createContactPage };
