@@ -1,6 +1,6 @@
 const createContactPage = () => {
-  const contactDiv = document.createElement("div");
-  contactDiv.id = "contact";
+  const contactDiv = document.createElement('div');
+  contactDiv.id = 'contact';
   contactDiv.innerHTML = `
     <p>Neopolis Restaurant</p>
     <span>Delivering excellence</span>

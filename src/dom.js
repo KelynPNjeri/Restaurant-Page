@@ -19,7 +19,7 @@ const createMenuTabs = () => {
   tabMenu.className = 'tab';
   tabMenu.innerHTML = `
     <button class="tablinks" id="menu" onClick="openMenu(this.id)"">Main Menu</button>
-    <button class="tablinks" id="contact" onClick="openMenu(this.id);"">Contact Us</button>
+    <button class="tablinks" id="contact-tab" onClick="openMenu(this.id);"">Contact Us</button>
   `;
   return tabMenu;
 };
