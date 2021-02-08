@@ -1,0 +1,43 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Simple Restaurant Page",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KelynPNjeri/Restaurant-Page.git"
+  },
+  "keywords": [
+    "Restaurant-Page"
+  ],
+  "author": "Kelyn Paul Njeri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KelynPNjeri/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/KelynPNjeri/Restaurant-Page#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.2.0",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
