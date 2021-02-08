@@ -2,7 +2,7 @@
 
 export const createMenuPage = () => {
   const parentMenuDiv = document.createElement('div');
-  parentMenuDiv.classList.add('tabcontent')
+  parentMenuDiv.classList.add('tabcontent');
   parentMenuDiv.innerHTML = `
     <div id="menu" data-tab-content class="active">
       <ul>
