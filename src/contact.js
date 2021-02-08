@@ -1,11 +1,13 @@
 /* eslint-disable import/prefer-default-export */
 export const createContactPage = () => {
   const contactDiv = document.createElement('div');
-  contactDiv.id = 'contact';
+  contactDiv.classList.add('tabcontent')  ;
   contactDiv.innerHTML = `
-    <p>Neopolis Restaurant</p>
-    <span>Delivering excellence</span>
-    <p>Mykonos, Greece</p>
+    <div id="contact" data-tab-content>
+      <p>Neopolis Restaurant</p>
+      <span>Delivering excellence</span>
+      <p>Mykonos, Greece</p>
+    </div>
   `;
   return contactDiv;
 };

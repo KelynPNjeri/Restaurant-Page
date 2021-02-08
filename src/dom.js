@@ -15,11 +15,11 @@ const restaurantTitle = () => {
 };
 
 const createMenuTabs = () => {
-  const tabMenu = document.createElement('div');
+  const tabMenu = document.createElement('ul');
   tabMenu.className = 'tab';
   tabMenu.innerHTML = `
-    <button class="tablinks" id="menu" onClick="openMenu(this.id)"">Main Menu</button>
-    <button class="tablinks" id="contact-tab" onClick="openMenu(this.id);"">Contact Us</button>
+    <li data-tab-target="#menu">Menu</li>
+    <li data-tab-target="#contact">Contact</li>
   `;
   return tabMenu;
 };

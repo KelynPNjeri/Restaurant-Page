@@ -6,30 +6,20 @@ import { createContactPage } from './contact';
 const contentDiv = document.getElementById('content');
 contentDiv.appendChild(restaurantTitle());
 contentDiv.appendChild(createMenuTabs());
+contentDiv.appendChild(createMenuPage());
+contentDiv.appendChild(createContactPage());
 
-const openMenu = (id) => {
-  switch (id) {
-    case 'menu':
-      contentDiv.appendChild(createMenuPage()).style.display = 'block';
-      document.getElementById('contact').style.display = 'none';
-      break;
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
 
-    case 'contact-tab':
-      contentDiv.appendChild(createContactPage()).style.display = 'block';
-      document.getElementById('restaurant-menu').style.display = 'none';
-      break;
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active');
 
-    default:
-      break;
-  }
-};
+        });
+        target.classList.add('active');
 
-const menuTab = document.getElementById('menu');
-menuTab.addEventListener('click', () => {
-  openMenu(menuTab.id);
-});
-
-const contactTab = document.getElementById('contact-tab');
-contactTab.addEventListener('click', () => {
-  openMenu(contactTab.id);
+    });
 });
